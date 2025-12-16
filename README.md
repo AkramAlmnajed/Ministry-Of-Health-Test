@@ -52,17 +52,43 @@ The application is built as part of a frontend technical assessment.
 
 ## Project Structure
 
-src/
-├── app/
-│ └── queryClient.ts
-├── components/
-│ └── toast/
-├── features/
-│ ├── auth/
-│ └── products/
-├── layouts/
-├── App.tsx
-├── main.tsx
+├─ src/
+│  ├─ app/
+│  │  └─ queryClient.ts
+│  ├─ components/
+│  │  └─ toast/
+│  │     ├─ ToastContext.ts
+│  │     └─ ToastProvider.tsx
+│  ├─ features/
+│  │  ├─ auth/
+│  │  │  ├─ auth.api.ts
+│  │  │  ├─ AuthContext.tsx
+│  │  │  ├─ AuthProvider.tsx
+│  │  │  ├─ LoginPage.tsx
+│  │  │  ├─ ProtectedRoute.tsx
+│  │  │  └─ useAuth.ts
+│  │  └─ products/
+│  │     ├─ products.api.ts
+│  │     ├─ ProductsPage.tsx
+│  │     ├─ AddProductDialog.tsx
+│  │     ├─ EditProductDialog.tsx
+│  │     ├─ DeleteConfirmDialog.tsx
+│  │     └─ ProductDetailsPage.tsx
+│  ├─ layouts/
+│  │  ├─ MainLayout.tsx
+│  │  ├─ Sidebar.tsx
+│  │  └─ UserMenu.tsx
+│  ├─ App.tsx
+│  ├─ main.tsx
+│  └─ index.css
+├─ public/
+├─ index.html
+├─ package.json
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ eslint.config.js
+├─ tsconfig.json
+└─ README.md
 
 
 ---
